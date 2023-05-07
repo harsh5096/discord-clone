@@ -1,0 +1,545 @@
+@font-face {
+    font-family: "Whitney Light";
+    src: url("./assets/fonts/whitneylight.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Whitney Medium";
+    src: url("./assets/fonts/whitneymedium.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Whitney Bold";
+    src: url("./assets/fonts/whitneybold.woff") format("woff");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  :root {
+    --light-clr: #fff;
+    --dark-clr: #23272a;
+    --brand-clr: #5865F2;
+    --off-white-clr: #f6f6f6;
+    --general-font-size: 2rem;
+    --primary-title-font-size: 4.8rem;
+    --secondary-title-font-size: 4rem;
+    --main-font-family-light: "Whitney Light", sans-serif;
+    --main-font-family-medium: "Whitney Medium", sans-serif;
+    --main-font-family-bold: "Whitney Bold", sans-serif;
+    --num-of-grid-columns: 4;
+    --section-spacing: 5.6rem 2.4rem;
+    --container-width: 126rem;
+  }
+  
+  body {
+    font-size: var(--general-font-size);
+    font-family: var(--main-font-family-light);
+  }
+  .menu{
+  color: black;}
+  
+  .firstpart{
+    display: block;
+    margin: 0 auto;
+    background-size:cover;
+     background-repeat: no-repeat;
+    background-image:url("./images/backimg.jpg");
+    width:100%;
+  /*   max-width:1496px; */
+    height:625px;
+   
+  }
+  
+  .logo-part img{
+      width: 3rem;
+      height: 3rem;
+    margin-left: 146px;
+  }
+  .logo-part p{
+      color:white;
+    margin-left: 10px;
+    font-weight:800;
+    font-size:1.7rem;
+    
+  }
+  .navbar {
+    max-width: 100%;
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .logo-part{
+    display: flex;
+    align-items:center;
+    width:30%;
+  }
+  .nav-middle{
+    display: flex;
+    width:50%;
+    align-items:center;
+  }
+  .nav-middle p{
+    font-size:1.5rem;
+      margin-left: 43px;
+    font-weight:600;
+    color:white;
+  }
+  .nav-middle .para{
+    font-size:1.5rem;
+         margin-left: -13px;
+    font-weight:600;
+    color:white;
+  }
+  
+  
+  .nav-last{
+     display: flex;
+    align-items:center;
+    width:20%;
+  }
+  .nav-last p {
+      font-weight: 100;
+      margin-left: 63px;
+      font-size: 1.4rem;
+          padding: 13px;
+   border-radius:20px;
+      background-color: white;
+  }
+  .nav-last button{
+      margin-left: 120px;
+  /*     visibility: hidden; */
+  }
+  
+  .middlepart h1{
+    margin-bottom: 18px;
+    font-weight: 900;
+      color: white;
+      font-size: 5.5rem;
+  }
+  .middlepart {
+       width: 800px;
+      margin-top: 150px;
+  }
+  .middlepart p{
+    font-family: "Whitney Medium";
+    src: url("./assets/fonts/whitneymedium.woff") format("woff");
+    color:white;
+        padding-top: 11px;
+  }
+  
+  .btn .btn1{   
+        margin-right: 30px;
+    border: white;
+        background-color: white;
+   font-family: " Bold";
+   font-size:1.8rem;
+        border-radius: 31px;
+    padding-top: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 15px;
+  }
+  .btn .btn2{    border: black;
+        border-radius: 31px;
+      background-color: black;
+   font-family: " Bold";
+   font-size:1.8rem;
+    padding-top: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 15px;
+    color:white;
+  }
+  .middle-part{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .btn{
+      margin-top: 26px;
+  }
+  
+  @media screen and (min-width: 1203px){
+  .logo-part {
+      display: flex;
+      align-items: center;
+   
+  } 
+    .logo-part img {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 88px;
+  } 
+    .nav-middle .para {
+      font-size: 1.5rem;
+      margin-left: 60px;
+      font-weight: 600;
+      color: white;
+  } 
+    .nav-middle p {
+      font-size: 1.5rem;
+      margin-left: 31px;
+      font-weight: 600;
+      color: white;
+  }
+    .nav-last h1 {
+      margin-left: 11px;
+      visibility: hidden;
+  }
+  }
+  @media screen and (min-width: 1023px){
+    .nav-last h1 {
+      margin-left: 83px;
+      visibility: hidden;
+  }
+    .nav-last {
+      display: flex;
+      align-items: center;
+      /* width: 20%; */
+  }
+    .logo-part {
+      display: flex;
+      align-items: center;
+      width: 19%;
+  }
+  }
+  @media screen and (max-width: 1203px){
+    .logo-part img {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 60px;
+  } 
+    .nav-middle p {
+      font-size: 1.5rem;
+      margin-left: 30px;
+      font-weight: 600;
+      color: white;
+  }
+  }
+  
+  .menu{
+    visibility:hidden
+  }
+  
+  @media screen and (max-width:1023px) {
+    .menu{
+      visibility:visible;
+    }
+    .nav-middle p{
+      color:black;
+      padding-top:15px;
+    }
+     .nav-middle{
+       margin-right:1px;
+       text-align:initial;
+          padding: 0%; 
+          display: flex;
+          flex-direction:column;
+          width:28%;
+          height:500px;
+          border: 2px solid whitesmoke;
+          background-color: white;
+          position:fixed;
+          top:15%;
+          right:0px;
+          left:130%;
+          align-items: center;
+          justify-content: center;
+          gap:1.5rem;
+          transition: 3s;
+          transform: translateX(-100VH);
+          border-top-left-radius:5%;
+  border-bottom-left-radius:5%;
+  
+      } 
+     .navbar .responsive_nav{
+          transform: none;
+      }
+  }
+  
+  .middle-part button img {
+      margin-right: 16px;
+      background: white;
+      width: 19px;
+      height: 20px;
+  }
+  
+  @media screen and (max-width:1022px){
+    
+    .middle-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: initial;
+      margin-left: 33px;
+  }
+    .btn {
+      display: flex;
+      margin-top: 26px;
+      flex-direction: column;
+      width: 350px;
+  }
+    .firstpart {
+      opacity: 0.8;
+      display: block;
+      margin: 0 auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./images/backimg.jpg);
+      width: 100%;
+      /* max-width: 1496px; */
+      height: 625px;
+  }
+  .middlepart {
+      width: 600px;
+      margin-top: 80px;
+  }
+    .middlepart p {
+      font-size: 16px;
+      font-family: "Whitney Medium";
+      src: url(./assets/fonts/whitneymedium.woff) format("woff");
+      color: white;
+      padding-top: 11px;
+  }
+    .btn .btn2 {
+      margin-top: 20px;
+      border: black;
+      border-radius: 31px;
+      background-color: black;
+      font-family: " Bold";
+      font-size: 1.8rem;
+      padding-top: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 15px;
+      color: white;
+  }
+  }
+  
+  
+  @media screen and (max-width:729px){
+    .middlepart {
+      width: 333px;
+      margin-top: 80px;
+  }
+  }
+  @media screen and (max-width:417px){
+    .middlepart p {
+      font-size: 14px;
+      font-family: "Whitney Medium";
+      src: url(./assets/fonts/whitneymedium.woff) format("woff");
+      color: white;
+      padding-top: 3px;
+  }
+    .middle-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: initial;
+      /* margin-left: 33px; */
+  }
+    .middlepart {
+  /*     width: 275px; */
+      margin-top: 80px;
+  }
+    .middle-part button img {
+      margin-right: 11px;
+      background: white;
+      width: 19px;
+      height: 20px;
+  }
+  .btn .btn1 {
+      margin-right: 30px;
+      border: white;
+      background-color: white;
+      font-family: " Bold";
+      font-size: 1.8rem;
+      border-radius: 31px;
+      padding-top: 8px;
+      padding-left: 8px;
+      width: 230px;
+      padding-right: 4px;
+      padding-bottom: 10px;
+  }
+  .middlepart h1 {
+      margin-bottom: 18px;
+      font-weight: 900;
+      color: white;
+      font-size: 2.5rem;
+  }
+    .btn .btn2 {
+      width: 254px;
+      margin-top: 20px;
+      border: black;
+      border-radius: 31px;
+      background-color: black;
+      font-family: " Bold";
+      font-size: 1.6rem;
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      color: white;
+  }
+  }
+  
+  
+  @media screen and (min-width: 1023px)
+  {
+  .nav-last h1 {
+      margin-left: 0px;
+      visibility: hidden;
+  }
+  }
+  
+  @media screen and (max-width:944px) {
+     .nav-middle{
+       margin-right:1px;
+       text-align:initial;
+          padding: 0%; 
+          display: flex;
+          flex-direction:column;
+          width:28%;
+      height:500px;
+          background-color: white;
+          position:fixed;
+          top:15%;
+          right:0px;
+          left:135%;
+          align-items: center;
+          justify-content: center;
+          gap:1.5rem;
+          transition: 3s;
+          transform: translateX(-100VH);
+            border-top-left-radius:5%;
+  border-bottom-left-radius:5%;
+  
+      } 
+  }
+  @media screen and (max-width:870px) {
+     .nav-middle{
+          left:140%;  
+      } 
+  }
+  @media screen and (max-width:795px) {
+     .nav-middle{
+          left:150%;  
+      } 
+  }
+  @media screen and (max-width:682px) {
+     .nav-middle{
+          left:160%;  
+      } 
+  }
+  @media screen and (max-width:615px) {
+     .nav-middle{
+          left:170%;  
+      } 
+  }
+  @media screen and (max-width:558px) {
+     .nav-middle{
+          left:180%;  
+      } 
+  }
+  @media screen and (max-width:558px) {
+  .nav-last {
+      margin-left: -78px;
+      display: flex;
+      align-items: center;
+      width: 20%;
+  }
+  }
+  @media screen and (max-width:495px) {
+    .nav-middle{
+          left:192%;  
+      } 
+  }
+  @media screen and (max-width:456px) {
+  .nav-last {
+      margin-left: 0px;
+      display: flex;
+      align-items: center;
+      width: 20%;
+      justify-content: flex-end;
+  }
+  .logo-part {
+      margin-left: -75px;
+      display: flex;
+      align-items: center;
+      width: 30%;
+  }
+    .nav-middle{
+          left:205%;  
+      } 
+  }
+  
+  @media screen and (max-width:398px) {
+    .middle-part {
+      display: flex;
+      width: 250px;
+      flex-direction: column;
+      align-items: center;
+      text-align: initial;
+      /* margin-left: 33px; */
+  }
+    .middlepart h1 {
+      margin-bottom: 18px;
+      font-weight: 900;
+      color: white;
+      font-size: 2.5rem;
+      margin-lefft: 24px;
+      margin-left: 12px;
+  }
+    .middlepart p {
+      font-size: 13px;
+      font-family: "Whitney Medium";
+      src: url(./assets/fonts/whitneymedium.woff) format("woff");
+      color: white;
+      padding-top: 3px;
+      width: 200px;
+      margin-left: 22px;
+  }
+    .btn {
+      margin-left: 12px;
+      display: flex;
+      margin-top: 26px;
+      flex-direction: column;
+      width: 350px;
+  }
+  }
+  
+  @media screen and (max-width:350px){
+    .middle-part {
+      display: flex;
+      width: 178px;
+      flex-direction: column;
+      align-items: center;
+      text-align: initial;
+      /* margin-left: 33px; */
+  }
+    .middlepart h1 { margin-bottom: 18px; font-weight: 900; color: white; font-size: 1.5rem; margin-lefft: 24px; margin-left: 52px; } 
+    
+    .middlepart p { font-size: 12px; font-family: "Whitney Medium"; src: url(./assets/fonts/whitneymedium.woff) format("woff"); color: white; padding-top: 3px; width: 189px; margin-left: 56px; }  .btn { margin-left: 12px; display: flex; margin-top: 26px; flex-direction: column; width: 200px; }    .btn .btn1 { margin-left: 36px; /* margin-right: 30px; */ border: white; background-color: white; font-family: " Bold"; font-size: 1.8rem; border-radius: 31px; padding-top: 8px; padding-left: 8px; width: 212px; padding-right: 4px; padding-bottom: 10px; }  .btn .btn2 { width: 227px; margin-left: 34px; margin-top: 20px; border: black; border-radius: 31px; background-color: black; font-family: " Bold"; font-size: 1.6rem; padding-top: 15px; padding-left: 20px; padding-right: 20px; padding-bottom: 15px; color: white; }
+  }
+  
+  @media screen and (max-width:386px) {
+    .nav-middle{
+  /*         left:285%;   */
+      } 
+  }
+  
+  @media screen and (max-width:346px) {
+    .nav-middle{
+          left:
+  /*           250px; */
+      } 
+  }
